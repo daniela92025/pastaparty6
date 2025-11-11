@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pasta Party | Меню</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+<style>
+        /* Минимальный CSS для оформления и контроля размера изображений */
+        :root {
+            --main-color: #cb5948; /* Цвет бренда */
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+
+        body {
+            background-color: var(--light-color);
+            font-family: 'Georgia', serif; /* Более классический шрифт для итальянского ресторана */
+        }
+
+         /* Стилизация шапки */
+        .header-brand {
+            background-color: var(--main-color);
+            color: white;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-brand h1 {
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+        }
+        
+        /* Стили для навигации */
+        .nav-pills .nav-link.active {
+            background-color: var(--main-color);
+        }
+        .nav-pills .nav-link {
+            color: var(--main-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Стили для секции меню */
+        .menu-section {
+            background-color: white;
+            padding: 40px 0;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .menu-section h2 {
+            color: var(--main-color);
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Playfair Display', serif; /* Более изысканный шрифт для заголовков */
+        }
+        .menu-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #dee2e6; /* Разделитель для блюд */
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+                        margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .menu-item-name {
+            font-size: 1.4rem;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .menu-item-description {
+            font-size: 0.95rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .menu-item-price {
+            font-size: 1.2rem;
+            color: var(--main-color);
+            font-weight: bold;
+        }
+        .menu-category-title {
+            font-size: 2rem;
+            color: var(--main-color);
+            margin-top: 40px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Стиль для фотографий блюд (опционально) */
+        .menu-item-image {
+            max-width: 100px; /* Ограничиваем размер изображений */
+            height: auto;
+            margin-right: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Добавьте шрифт Playfair Display */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap');
+        .header-brand h1, .menu-section h2, .menu-category-title {
+            font-family: 'Playfair Display', serif;
+        }
+        body {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка и заголовок -->
+    <header class="text-center header-brand">
+        <h1>Pasta Party</h1>
+    </header>
+
+    <!-- Навигация -->
+    <div class="container mb-4">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="главная.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="меню.html">Меню</a> <!-- Ссылается на текущую страницу, предполагая, что меню будет здесь -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="контакты.html">Доставка</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Секция меню -->
+    <main class="container menu-section">
+        <h2 class="mb-5">Наше Меню</h2>
+
+        <!-- Анчоусы -->
+        <div class="menu-category-title">Антипасти (Закуски)</div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/bruschetta.jpg" alt="Брускетта" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Брускетта Классическая</div>
+                <div class="menu-item-description">Хрустящие тосты с помидорами, чесноком, базиликом и оливковым маслом.</div>
+                <div class="menu-item-price">350 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/caprese.jpg" alt="Капрезе" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Салат Капрезе</div>
+                <div class="menu-item-description">Моцарелла, спелые помидоры, свежий базилик, оливковое масло.</div>
+                <div class="menu-item-price">420 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/arancini.jpg" alt="Аранчини" class="menu-item-image"> -->
+                 </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Аранчини (Рисовые шарики)</div>
+                <div class="menu-item-description">Хрустящие рисовые шарики с начинкой из сыра моцарелла и ветчины. Подаются с томатным соусом.</div>
+                <div class="menu-item-price">380 ₽</div>
+            </div>
+        </div>
+
+        <!-- Паста -->
+        <div class="menu-category-title">Паста</div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/carbonara.jpg" alt="Карбонара" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Спагетти Карбонара</div>
+                <div class="menu-item-description">Классическая паста с яичным желтком, пармезаном, гуанчале (или панчеттой) и черным перцем.</div>
+                <div class="menu-item-price">550 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/bolognese.jpg" alt="Болоньезе" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Феттуччине Болоньезе</div>
+                <div class="menu-item-description">Домашняя феттуччине с насыщенным мясным соусом Болоньезе.</div>
+                <div class="menu-item-price">520 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/pesto.jpg" alt="Песто" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Лингвини с Песто</div>
+                <div class="menu-item-description">Лингвини в ароматном соусе Песто с кедровыми орешками и пармезаном.</div>
+                <div class="menu-item-price">490 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/alfredo.jpg" alt="Альфредо" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Феттуччине Альфредо</div>
+                <div class="menu-item-description">Сливочная паста с сыром Пармиджано Реджано.</div>
+                <div class="menu-item-price">580 ₽</div>
+            </div>
+        </div>
+
+        <!-- Пицца -->
+        <div class="menu-category-title">Пицца (на тонком тесте)</div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/margherita.jpg" alt="Маргарита" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Маргарита</div>
+                <div class="menu-item-description">Томатный соус, моцарелла, свежий базилик.</div>
+                <div class="menu-item-price">480 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/pepperoni.jpg" alt="Пепперони" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Пепперони</div>
+                <div class="menu-item-description">Томатный соус, моцарелла, пикантные колбаски пепперони.</div>
+                <div class="menu-item-price">530 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items\
+         
+-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/quattro.jpg" alt="Четыре сыра" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Кватро Формаджи (Четыре сыра)</div>
+                <div class="menu-item-description">Моцарелла, горгонзола, пармезан, рикотта.</div>
+                <div class="menu-item-price">570 ₽</div>
+            </div>
+        </div>
+
+        <!-- Десерты -->
+        <div class="menu-category-title">Десерты</div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/tiramisu.jpg" alt="Тирамису" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Тирамису</div>
+                <div class="menu-item-description">Классический итальянский десерт из печенья савоярди, пропитанного кофе, с сыром маскарпоне и какао.</div>
+                <div class="menu-item-price">390 ₽</div>
+            </div>
+        </div>
+        <div class="row align-items-center menu-item">
+            <div class="col-md-2">
+                <!-- <img src="images/panna_cotta.jpg" alt="Панна котта" class="menu-item-image"> -->
+            </div>
+            <div class="col-md-10">
+                <div class="menu-item-name">Панна Котта</div>
+                <div class="menu-item-description">Нежный сливочный десерт с ягодным соусом.</div>
+                <div class="menu-item-price">350 ₽</div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Подключение Bootstrap JS (необходимо для некоторых компонентов, хотя в данном случае не критично) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

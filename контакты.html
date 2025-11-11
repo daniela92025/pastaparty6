@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pasta Party | Контакты</title>
+    
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Подключение шрифтов Playfair Display и Georgia -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    
+    <!-- Подключение иконок Bootstrap (для контактов) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Общие переменные и стили (скопировано из вашего шаблона) */
+        :root {
+            --main-color: #cb5948; /* Цвет бренда */
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+
+        body {
+            background-color: var(--light-color);
+            font-family: 'Georgia', serif;
+            color: var(--dark-color);
+        }
+
+        /* Стилизация шапки */
+        .header-brand {
+            background-color: var(--main-color);
+            color: white;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-brand h1 {
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+        }
+        /* Стили для навигации */
+        .nav-pills .nav-link.active {
+            background-color: var(--main-color);
+        }
+        .nav-pills .nav-link {
+            color: var(--main-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Стили для секции контактов */
+        .contact-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            color: var(--main-color);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+        
+        /* Стиль для блока с информацией */
+        .contact-info-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid var(--main-color);
+            background-color: #fff8f8;
+            border-radius: 4px;
+        }
+        .contact-info-block i {
+            color: var(--main-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        .contact-info-block strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        /* Стиль для карты */
+        .map-container {
+            height: 450px; /* Фиксированная высота для карты */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="text-center header-brand">
+        <div class="container">
+            <h1>Pasta Party</h1>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <div class="container mb-4">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="главная.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="меню.html">Меню</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="контакты.html">Доставка</a>
+            </li>
+
+
+    <!-- Секция Контактов -->
+    <main class="container my-5">
+        <div class="contact-section">
+            <h2>Свяжитесь с нами</h2>
+
+            <div class="row">
+                
+                <!-- Левая колонка: Контактная информация -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    
+                    <div class="contact-info-block">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <strong>Адрес</strong>
+                        <p class="mb-0">ул. Итальянская, д. 15, Москва, Россия</p>
+                    </div>
+                    <div class="contact-info-block">
+                        <i class="bi bi-telephone-fill"></i>
+                        <strong>Телефон</strong>
+                        <p class="mb-0"><a href="tel:+74951234567" class="text-decoration-none text-dark">+7 (495) 123-45-67</a></p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="bi bi-envelope-fill"></i>
+                        <strong>Электронная почта</strong>
+                        <p class="mb-0"><a href="mailto:info@pastaparty.ru" class="text-decoration-none text-dark">info@pastaparty.ru</a></p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="bi bi-clock-fill"></i>
+                        <strong>Часы работы</strong>
+                        <p class="mb-1">Пн-Пт: 11:00 – 23:00</p>
+                        <p class="mb-0">Сб-Вс: 12:00 – 00:00</p>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Карта -->
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <!-- Вставьте сюда код для встраивания Google Maps или Яндекс.Карт -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.896790938833!2d37.6176333157585!3d55.7512441805562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5
+4a5a5d1a1f9f%3A0x4d5b7a1f2b3c4d5e!2z0JzQvtGB0YLRgNCw0L3RgdC60LDRjyDRg9C7LiwgMTUsINCc0L7RgdC60LDRjyDQmtC70LDRgdC40L3RgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1625078400000!5m2!1sru!2sru" 
+                            width="100%" 
+                            height="100%" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
